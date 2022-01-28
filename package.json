@@ -1,7 +1,7 @@
 {
   "name": "catechism-web",
   "version": "0.0.3",
-  "homepage": "https://nossbigg.github.io/catechism",
+  "homepage": "https://arnoo.github.io/catechism",
   "private": true,
   "dependencies": {
     "@material-ui/core": "4.1.3",

@@ -66,7 +66,7 @@ export const Layout: React.FC<LayoutProps> = props => {
                 className={styles.catechismAppBarText}
                 to={APP_ROUTES.INDEX}
               >
-                Catechism
+                Catéchisme
               </Link>
             </Container>
           </Toolbar>
@@ -112,6 +112,6 @@ const DummyToolbar: React.FC = () => {
 
 const DEFAULT_MAIN_CONTAINER_WIDTH = 'md'
 const DEFAULT_TOOLBAR_WIDTH = 'md'
-const DEFAULT_WEBSITE_TITLE = 'Catechism of the Catholic Church'
+const DEFAULT_WEBSITE_TITLE = 'Catéchisme de l\'Église Catholique'
 
-export const makeDocumentTitle = (suffix: string) => `Catechism | ${suffix}`
+export const makeDocumentTitle = (suffix: string) => `Catéchisme | ${suffix}`

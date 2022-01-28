@@ -9,15 +9,19 @@ export const Footer: React.FC = () => {
   return (
     <div className={styles.footerContainer}>
       <Container maxWidth='md'>
-        <b>Catechism of the Catholic Church</b>
+        <b>Catéchisme de l'Église Catholique</b>
         <br />
         <span>© Libreria Editrice Vaticana</span>
         <br />
         <span>© St. Charles Borromeo Catholic Church</span>
         <br />
         <span>
-          Reskin by nossbigg&nbsp;
+          Reskin par nossbigg&nbsp;
           <a href='https://github.com/nossbigg/catechism'>
+            <img src={GITHUB_ICON} height='10' alt='github icon' />
+          </a>
+          &nbsp;adapté en Français par arnoo&nbsp;
+          <a href='https://github.com/arnoo/catechism'>
             <img src={GITHUB_ICON} height='10' alt='github icon' />
           </a>
         </span>
