@@ -1,7 +1,7 @@
 import { createSitemap, ISitemapItemOptionsLoose } from 'sitemap'
 import { CCCMeta } from './typedefs.js'
 
-const SITE_HOMEPAGE = 'https://nossbigg.github.io/catechism'
+const SITE_HOMEPAGE = 'https://arnoo.github.io/catechism'
 const makeIndexUrl = () => `${SITE_HOMEPAGE}/#/index`
 const makePageUrl = (pageUrl: string) => `${SITE_HOMEPAGE}/#/p/${pageUrl}`
 
