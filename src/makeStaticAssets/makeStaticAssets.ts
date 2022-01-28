@@ -11,7 +11,8 @@ import { makeSitemapXml } from './makeSitemap'
 export const makeStaticAssets = async () => {
   await prepareDirectory()
 
-  const ccc = await getCCCReleaseFromRemote()
+  const ccc = await getLocalCCCRelease()
+  //const ccc = await getCCCReleaseFromRemote()
   const cccMeta = await makeCCCMetadata(ccc)
   const cccPages = await makeCCCPages(ccc, cccMeta)
   const sitemapXml = makeSitemapXml(cccMeta)
@@ -22,6 +23,13 @@ export const makeStaticAssets = async () => {
   await saveCCCMeta(cccMeta)
   await saveCCCPages(cccPages)
   await saveSitemapXml(sitemapXml)
+}
+
+const getLocalCCCRelease = async (): Promise<CCCStore> => {
+  log('ccc: using CCC local copy...')
+  const cccRead = JSON.parse(await fs.readFile("../catechism-ccc-json/data/ccc_fr.json", 'utf8'))
+  log('ccc: done!')
+  return cccRead
 }
 
 const getCCCReleaseFromRemote = async (): Promise<CCCStore> => {
